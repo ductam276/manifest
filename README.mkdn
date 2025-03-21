@@ -17,7 +17,7 @@ Prior to building, you will need basic knowledge of [Git](https://www.atlassian.
 ### Initialize local repository
 
 ```
-repo init -u https://github.com/Project-Mist-OS/manifest -b 15 --git-lfs
+repo init -u https://github.com/Mist-OS-Staging/manifest -b 15 --git-lfs
 ```
 
 ### Sync up 
