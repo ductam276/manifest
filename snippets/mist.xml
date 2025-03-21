@@ -66,6 +66,8 @@
   <remove-project path="packages/apps/SetupWizard" />
   <remove-project path="packages/apps/Updater" />
   <remove-project path="packages/overlays/Lineage" />
+  <remove-project path="packages/modules/Connectivity" />
+   <remove-project path="packages/modules/Permission" />
   <!-- AOSP Modules  -->
   <remove-project path="packages/modules/Bluetooth" />
   <remove-project path="packages/modules/Connectivity" />
@@ -162,6 +164,8 @@
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="mist" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="mist" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk" remote="mist" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="mist" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="mist" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="mist" />
   
   <!-- AOSP Services -->
