@@ -2,7 +2,7 @@
 <manifest>
 
   <remote name="mist"
-          fetch="https://github.com/Project-Mist-OS"
+          fetch="https://github.com/Mist-OS-Staging"
           sync-c="true"
           sync-j="4"
           revision="refs/heads/15" />
@@ -80,6 +80,8 @@
   <remove-project path="system/update_engine" />
   <!-- Vendor  -->
   <remove-project path="vendor/lineage" />
+  <!-- Extra -->
+  <remove-project name="platform/external/dng_sdk" />
 
   <!-- Android Manifest  -->
   <project path="manifest" name="manifest" remote="mist" />
@@ -117,6 +119,7 @@
   <!-- External -->
   <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="mist" />
   <project path="external/tigervnc" name="external_tigervnc" groups="pdk" remote="mist" />
+  <project path="external/dng_sdk" name="external_dng_sdk" remote="mist" />
 
   <!-- Frameworks  -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="mist" />
@@ -136,7 +139,7 @@
   <!-- Non-AOSP Packages  -->
   <project path="packages/apps/Backgrounds" name="packages_apps_Backgrounds" remote="mist" />
   <project path="packages/apps/FaceUnlock" name="android_packages_apps_FaceUnlock" remote="crdroid-gitlab" />
-  <project path="packages/apps/Personalizations" name="packages_apps_Mistify" groups="pdk-fs" remote="mist-lab" />
+  <project path="packages/apps/Personalizations" name="packages_apps_Mistify" groups="pdk-fs" remote="mist" />
   <project path="packages/apps/VendorSupport" name="packages_apps_VendorSupport" groups="pdk-fs" remote="mist" />
   <project path="packages/apps/DesktopMode" name="packages_apps_DesktopMode" remote="mist" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="mist" />
@@ -159,6 +162,7 @@
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="mist" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="mist" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk" remote="mist" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="mist" />
   
   <!-- AOSP Services -->
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="mist" />
@@ -174,10 +178,9 @@
   <project path="vendor/addons" name="vendor_addons" remote="mist" />
   <project path="vendor/gms" name="android_vendor_gms" remote="gitlab" />
   <project path="vendor/lineage" name="vendor_lineage" remote="mist" />
-  <project path="vendor/mist" name="vendor_mist" groups="pdk-fs" remote="mist-lab" />
+  <project path="vendor/mist" name="vendor_mist" groups="pdk-fs" remote="mist" />
   <project path="vendor/official_devices" name="official_devices" remote="mist-device"  />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="mist" />
   <project path="vendor/pixeloverlays" name="vendor_pixeloverlays" remote="mist" />
   <project path="Spoofing" name="vendor_Spoofing" remote="mist" />
-  <project path="vendor/extra" name="vendor_extra" remote="mist" />
 </manifest>
