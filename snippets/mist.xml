@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="mist"
+           fetch="https://github.com/Mist-OS-Staging"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/15.0" />
+
+  <remote  name="mist-devices"
+           fetch="https://github.com/MistOS-Devices"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/15.0" />
+
+  <remote  name="mist-gitlab"
+           fetch="https://gitlab.com/ShukakuZa"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/15.0" />
+
+
+  <!-- Starting of MistOS -->
+  <project path="manifest" name="manifest" remote="mist" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="mist" />
+  <project path="external/boringssl" name="external_boringssl" remote="mist" />
+  
+  <!-- build repos -->
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="mist" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/release" name="build_release" remote="mist" />
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="mist" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+
+  <!-- frameworks repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="mist" />
+  <project path="frameworks/native" name="frameworks_native" remote="mist" />
+  <project path="frameworks/base" name="frameworks_base" remote="mist" />
+
+  <project path="lineage-sdk" name="lineage-sdk" remote="mist"  />
+
+  <!-- packages repos -->
+  <project path="packages/apps/Backgrounds" name="packages_apps_Backgrounds" remote="mist" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="mist" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="mist" />
+  <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="mist" />
+  <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="mist" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="mist"  />
+  <project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="mist" />  
+
+  <!-- system repos -->
+  <project path="system/core" name="system_core" groups="pdk" remote="mist" />
+  <project path="system/libhwbinder" name="libhwbinder" remote="mist" />
+  <project path="system/security" name="system_security" remote="mist" />
+
+  <!--vendor repos-->
+  <project path="vendor/addons" name="vendor_addons" remote="mist"  />
+  <project path="vendor/lineage" name="vendor_mist" remote="mist"  />
+  <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="mist" />
+  
+</manifest>
