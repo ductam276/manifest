@@ -105,6 +105,7 @@
   <!-- Packages -->
   <project path="packages/apps/BtHelper" name="TheParasiteProject/packages_apps_BtHelper" revision="main" remote="github-non-los" />
   <!--<project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="mist" />-->
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="mist" />
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="mist" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="mist" />
   <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="mist" />
