@@ -11,7 +11,7 @@
            fetch="https://github.com/MistOS-Devices"
            sync-c="true"
            sync-j="4"
-           revision="refs/heads/vic" />
+           revision="refs/heads/16" />
 
   <remote  name="mist-codeberg"
            fetch="https://codeberg.org/Zabuka"
@@ -94,6 +94,7 @@
 
   <!-- Infrastructure -->
   <project path="mist/manifest" name="manifest" remote="mist" />
+  <project path="mist-maintainers" name="mist-maintainers" remote="mist-devices" />
 
   <!-- Kernel -->
   <project path="kernel/configs" name="kernel_configs" groups="vts,pdk" remote="mist" />
@@ -154,4 +155,5 @@
   <project path="vendor/gms" name="vendor_gms" remote="mist-codeberg" clone-depth="1" />
   <project path="vendor/lineage" name="vendor_mist" remote="mist" />
   <project path="vendor/pixel-style" name="vendor_pixel-style" remote="mist" />
+  <project path="vendor/official_devices" name="official_devices" remote="mist-devices" />
 </manifest>
