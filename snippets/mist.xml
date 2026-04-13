@@ -118,6 +118,8 @@
   <project path="packages/services/OmniJaws" name="Project-Mist-OS/packages_services_OmniJaws" remote="mist" />
   <project path="packages/services/Telecomm" name="Project-Mist-OS/packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="mist" />
   <project path="packages/services/Telephony" name="Project-Mist-OS/packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="mist" />
+  <project path="vendor/qcom/opensource/vibrator" name="Project-Mist-OS/vendor_qcom_opensource_vibrator" groups="qcom,pakala-vendor" remote="mist" />
+
 
   <project path="toolchain/pgo-profiles" name="Project-Mist-OS/toolchain_pgo-profiles" groups="pdk" clone-depth="1" remote="mist" />
 
