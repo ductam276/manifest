@@ -18,7 +18,7 @@
 
 ### **Initialize Repository**
 ```bash
-repo init -u https://github.com/Project-Mist-OS/manifest -b 16.2 --git-lfs
+repo init -u https://github.com/Project-Mist-OS/manifest -b 16.2-new --git-lfs
 ```
 
 ### **Sync Sources**
