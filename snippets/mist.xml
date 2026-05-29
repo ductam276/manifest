@@ -97,7 +97,7 @@
 
   <project path="packages/apps/AxThemeStore" name="Mist-OS-Staging/packages_apps_AxThemeStore" remote="staging" />
   <project path="packages/apps/ColumbusService" name="Project-Mist-OS/packages_apps_ColumbusService" remote="mist" />
-  <project path="packages/apps/Mistify" name="Mist-OS-Staging/packages_apps_Mistify" remote="staging" revision="4.6" />
+  <project path="packages/apps/Mistify" name="Project-Mist-OS/packages_apps_Mistify" remote="mist" />
   <project path="packages/apps/DeskClock" name="Project-Mist-OS/packages_apps_DeskClock" groups="pdk-fs" remote="mist" />
   <project path="packages/apps/Dialer" name="Project-Mist-OS/packages_apps_Dialer" groups="pdk-fs" remote="mist" />
   <project path="packages/apps/DocumentsUI" name="Project-Mist-OS/packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="mist" />
